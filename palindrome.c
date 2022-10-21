@@ -1,12 +1,12 @@
 //check the number is palindrome or not
 #include<stdio.h>
-void main(){
-    int a,b=0,x,y=10,f;    
+int main(){
+    int a,b=0,x,y=10,check;    
              
     printf("\nEnter a number : ");
     scanf("%d",&a);
-    f=a; 
-    while (f>0)
+    check=a; 
+    while (check>0)
     {        
         x=f%10;                    
         b=x+(b*y);                                                                      
@@ -18,6 +18,5 @@ void main(){
 
     }
     else printf("%d is not a palindrome number ",a);
-    
-
+    return 0;
 }
